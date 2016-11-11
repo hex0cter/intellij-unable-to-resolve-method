@@ -1,0 +1,7 @@
+host: uk-integration-kasper-communication-test-mq1
+port: 5672
+user: tx
+password: tx
+vhost: /kasper
+exchange: tx
+routingKey: tx.customer.notify

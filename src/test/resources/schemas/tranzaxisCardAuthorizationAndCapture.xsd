@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by ak (c) -->
+<xs:schema xmlns="http://schemas.klarna.com/tranzaxisIntegration/cardAuthorizationAndCapture"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://schemas.klarna.com/tranzaxisIntegration/cardAuthorizationAndCapture"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           xmlns:cards="http://schemas.klarna.com/cards">
+    <xs:import namespace="http://schemas.klarna.com/cards" schemaLocation="cards.xsd"/>
+    <xs:complexType name="orderCardAuthorizationReversalRequest">
+        <xs:all>
+            <xs:element name="orderId" type="xs:string"/>
+            <xs:element name="cardAuthorizationReversalRequest" type="cards:cardAuthorizationReversalRequest"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="orderCardCaptureOnCardAuthorizationRequest">
+        <xs:all>
+            <xs:element name="orderId" type="xs:string"/>
+            <xs:element name="captureId" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>
+                        This capture refers to the Capture concept of Klarna (in the Order lifecycle),
+                        not the Card Capture.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="paymentServiceProviderId" type="xs:string"/>
+            <xs:element name="cardCaptureOnAuthorizationRequest" type="cards:cardCaptureOnCardAuthorizationRequest"/>
+            <xs:element name="card" type="cards:card"/>
+            <xs:element name="payee" type="cards:payee"/>
+            <xs:element name="connector" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:element name="orderCardCaptureOnCardAuthorizationRequest" type="orderCardCaptureOnCardAuthorizationRequest"/>
+    <xs:element name="orderCardAuthorizationReversalRequest" type="orderCardAuthorizationReversalRequest"/>
+</xs:schema>

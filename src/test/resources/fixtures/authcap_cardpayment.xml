@@ -1,0 +1,371 @@
+<tran:Rtp xmlns:tran="http://schemas.tranzaxis.com/tran.xsd">
+    <tran:Tran>
+        <tran:Request xmlns="http://schemas.tranzaxis.com/contracts-admin.xsd"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xmlns:com="http://schemas.tranzaxis.com/common-types.xsd"
+                      xmlns:con="http://schemas.klarna.tranzaxis.com/contracts-klarna-order-admin.xsd"
+                      xmlns:sub="http://schemas.tranzaxis.com/subjects-admin.xsd" Kind="SendContractInfo"
+                      LifePhase="Single" ProcessorInstId="1" OriginatorInstId="1" OperDay="2015-06-18T00:00:00.000"
+                      ApprovalCode="308484" IsAdvice="true" Result="Approved" ProcessorInstName="Klarna"
+                      UndoState="Normal">
+            <tran:Parties>
+                <tran:Party Id="34584"/>
+            </tran:Parties>
+            <tran:Link Kind="Parent2Embedded" Key="150618000008313506" Search1Dept="1" Search2Dept="1"
+                       ResultOnFailure="Approved"/>
+            <tran:Match Key="150618000008313507"/>
+            <tran:Specific>
+                <tran:SendContractInfo>
+                    <tran:Template>CardPaymentConfirmation</tran:Template>
+                    <tran:Day>2015-06-18T00:00:00.000</tran:Day>
+                    <tran:Contract Id="34584" Rid="34584" InstId="1">
+                        <ClassGuid>acl2GBU5H45C5DV3IYRQMIHM2IV5A</ClassGuid>
+                        <TypeId>481</TypeId>
+                        <ClientId>15085</ClientId>
+                        <ClientRid>e73aae32-30c5-4685-9794-925082c215d5</ClientRid>
+                        <Title xsi:nil="true"/>
+                        <Status>A</Status>
+                        <RiskLevel xsi:nil="true"/>
+                        <ProfileId xsi:nil="true"/>
+                        <CreateTime>2015-06-18T12:52:26.000</CreateTime>
+                        <CreateDay>2015-06-18T00:00:00.000</CreateDay>
+                        <CreateUserName xsi:nil="true"/>
+                        <ActivateTime>2015-06-18T12:52:26.000</ActivateTime>
+                        <ActivateDay>2015-06-18T00:00:00.000</ActivateDay>
+                        <ActivateUserName xsi:nil="true"/>
+                        <ConclusionDay>2015-06-18T00:00:00.000</ConclusionDay>
+                        <ConclusionUserName xsi:nil="true"/>
+                        <ReconclusionDay xsi:nil="true"/>
+                        <ReconclusionUserName xsi:nil="true"/>
+                        <CloseTime xsi:nil="true"/>
+                        <CloseDay xsi:nil="true"/>
+                        <CloseUserName xsi:nil="true"/>
+                        <Notes xsi:nil="true"/>
+                        <TariffPlans>
+                            <TariffPlan Id="34421">
+                                <TariffPlanGuid>IA636MAKFRHSZEAJ2L4U2TDK3A</TariffPlanGuid>
+                                <StartTime>2015-06-18T12:52:16.000</StartTime>
+                                <StartOperDay>2015-06-18T00:00:00.000</StartOperDay>
+                                <Strategies/>
+                            </TariffPlan>
+                        </TariffPlans>
+                        <OutLinks>
+                            <Link Id="50581" Kind="Order" Contract2Rid="US-TEST-1000">
+                                <Status>A</Status>
+                                <Title1 xsi:nil="true"/>
+                                <Contract1PartId xsi:nil="true"/>
+                                <BatchId xsi:nil="true"/>
+                                <Title2 xsi:nil="true"/>
+                                <Notes xsi:nil="true"/>
+                                <ProfileId xsi:nil="true"/>
+                                <ExpTime xsi:nil="true"/>
+                                <CreateTime>2015-06-18T12:52:26.000</CreateTime>
+                                <CreateDay>2015-06-18T00:00:00.000</CreateDay>
+                                <CreateUserName xsi:nil="true"/>
+                                <ActivateTime>2015-06-18T12:52:26.000</ActivateTime>
+                                <ActivateDay>2015-06-18T00:00:00.000</ActivateDay>
+                                <ActivateUserName xsi:nil="true"/>
+                                <CloseTime xsi:nil="true"/>
+                                <CloseDay xsi:nil="true"/>
+                                <CloseUserName xsi:nil="true"/>
+                                <Restrictions/>
+                            </Link>
+                        </OutLinks>
+                        <Restrictions/>
+                        <UserAttrs>
+                            <com:ParamValue Rid="customer_info.date_of_birth">
+                                <com:Val>1975-06-18</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.credit_card.holder">
+                                <com:Val>Cyrus Barton</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.connector">
+                                <com:Val>pspConnector</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.credit_card.card_number">
+                                <com:Val>4***********1111</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.credit_card.expiration_year">
+                                <com:Val>18</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.client_payment_reference">
+                                <com:Val>clientPaymentReference</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.credit_card.brand">
+                                <com:Val>VISA</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.credit_card.expiration_month">
+                                <com:Val>2</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.gateway_reference">
+                                <com:Val>pspGatewayReference</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.card_token">
+                                <com:Val>pspCardToken</com:Val>
+                            </com:ParamValue>
+                            <com:ParamValue Rid="psp.connector_reference">
+                                <com:Val>pspConnectorReference</com:Val>
+                            </com:ParamValue>
+                        </UserAttrs>
+                        <Accounts>
+                            <Account Id="53728" Number="1000005345117" Ccy="840" Role="Loan"
+                                     PlanItemGuid="JCLCOISOJJBCTLUGFRZLQPPRCA" PlanItemCode="1" PlanItemSubCode="00000"
+                                     PlanItemSyntheticAcctNumber="1461" AcctRoleInContract="Principal.Invoice">
+                                <Status>O</Status>
+                                <OpenDay>2015-06-18T00:00:00.000</OpenDay>
+                                <OpenUserName xsi:nil="true"/>
+                                <CloseDay xsi:nil="true"/>
+                                <CloseUserName xsi:nil="true"/>
+                                <Balance>0.00</Balance>
+                                <CreditHold>0</CreditHold>
+                                <DebitHold>0</DebitHold>
+                            </Account>
+                            <Account Id="53729" Number="1010005345225" Ccy="840" Role="Deposit"
+                                     PlanItemGuid="SZ3E4KLVPJALTBXXERWUD66YDM" PlanItemCode="1" PlanItemSubCode="01000"
+                                     PlanItemSyntheticAcctNumber="2951" AcctRoleInContract="Deposit">
+                                <Status>O</Status>
+                                <OpenDay>2015-06-18T00:00:00.000</OpenDay>
+                                <OpenUserName xsi:nil="true"/>
+                                <CloseDay xsi:nil="true"/>
+                                <CloseUserName xsi:nil="true"/>
+                                <Balance>0.00</Balance>
+                                <CreditHold>0</CreditHold>
+                                <DebitHold>0</DebitHold>
+                            </Account>
+                        </Accounts>
+                        <Ext>
+                            <con:KlarnaOrderContractExt>
+                                <con:PaymentType>Invoice</con:PaymentType>
+                                <con:MerchantContractRid>US-TEST-1000</con:MerchantContractRid>
+                                <con:OrderRid>c0a86f39-8285-45d6-bf0b-45403f0b76d5</con:OrderRid>
+                                <con:Description xsi:nil="true"/>
+                                <con:ItemsInfo xsi:nil="true"/>
+                                <con:CurAuthAmt>224.59</con:CurAuthAmt>
+                                <con:TaxAmt xsi:nil="true"/>
+                                <con:TotalCapturedAmt>224.59</con:TotalCapturedAmt>
+                                <con:TotalRefundedAmt>0</con:TotalRefundedAmt>
+                                <con:OrigAuthAmt>224.59</con:OrigAuthAmt>
+                                <con:MerchantRid1>JlRdoYmJ</con:MerchantRid1>
+                                <con:MerchantRid2>DBEiJinFknAti</con:MerchantRid2>
+                                <con:ShortRid>1C2MB2Z-1</con:ShortRid>
+                                <con:MerchantCallbackUri>
+                                    http://webshop-sys-cloud-qa.devserv.cloud.internal.machines///push.php?env=tx_qa?id=c0a86f39-8285-45d6-bf0b-45403f0b76d5
+                                </con:MerchantCallbackUri>
+                                <con:PurchaseStartTime>2015-06-18T12:52:24.325</con:PurchaseStartTime>
+                                <con:PurchaseFinishTime>2015-06-18T12:52:24.325</con:PurchaseFinishTime>
+                                <con:ExpirationTime>2015-06-25T00:00:00.000</con:ExpirationTime>
+                                <con:AuthExpirationDay xsi:nil="true"/>
+                                <con:PurchaseCountryId xsi:nil="true"/>
+                                <con:PurchaseLocale>en-US</con:PurchaseLocale>
+                                <con:BillingAddress CountryId="840" AddressInCity="hQ-3"
+                                                    AddressInCountry="2796 Leuschke Skyway" RecipientTitle="Mr"
+                                                    RecipientFirstName="Cyrus" RecipientLastName="Barton" Zip="M15 4AB"
+                                                    RegionTitle="Alaska" CityTitle="North Devon District"
+                                                    Phone="08123 7368" Email="Bethel@zTjtU.us"/>
+                                <con:ShippingAddress CountryId="840" AddressInCity="hQ-3"
+                                                     AddressInCountry="2796 Leuschke Skyway" RecipientTitle="Mr"
+                                                     RecipientFirstName="Cyrus" RecipientLastName="Barton" Zip="M15 4AB"
+                                                     RegionTitle="Alaska" CityTitle="North Devon District"
+                                                     Phone="08123 7368" Email="Bethel@zTjtU.us"/>
+                                <con:OrderState>A</con:OrderState>
+                                <con:CardAuthPspRid>484423505860</con:CardAuthPspRid>
+                                <con:TaxRate xsi:nil="true"/>
+                                <con:PaymentRid>00025638</con:PaymentRid>
+                                <con:ReconciliationRid xsi:nil="true"/>
+                                <con:CapturedAmt>224.59</con:CapturedAmt>
+                                <con:RefundedAmt>0</con:RefundedAmt>
+                                <con:ShipmentDay xsi:nil="true"/>
+                                <con:PaymentDueDay>2015-07-02T00:00:00.000</con:PaymentDueDay>
+                                <con:DunningSchemeId>1</con:DunningSchemeId>
+                                <con:DunningStageSeq>0</con:DunningStageSeq>
+                                <con:StartStageDay>2015-06-18T00:00:00.000</con:StartStageDay>
+                                <con:NextKeyDayType>DD</con:NextKeyDayType>
+                                <con:NextKeyDay>2015-07-02T00:00:00.000</con:NextKeyDay>
+                                <con:LastDueDay xsi:nil="true"/>
+                                <con:InterestBearingDay xsi:nil="true"/>
+                                <con:FraudReasonDictionaryRid xsi:nil="true"/>
+                                <con:FraudReasonRid xsi:nil="true"/>
+                                <con:Actions>
+                                    <con:Action>
+                                        <con:Id>23415</con:Id>
+                                        <con:Type>C</con:Type>
+                                        <con:Amt>224.59</con:Amt>
+                                        <con:ItemsInfo xsi:nil="true"/>
+                                        <con:Description xsi:nil="true"/>
+                                        <con:TranId>150618000008313503</con:TranId>
+                                        <con:TimeStamp>2015-06-18T12:52:26.000</con:TimeStamp>
+                                        <con:ParentActionId xsi:nil="true"/>
+                                        <con:ContractRid>34584</con:ContractRid>
+                                    </con:Action>
+                                </con:Actions>
+                                <con:Shipping/>
+                            </con:KlarnaOrderContractExt>
+                        </Ext>
+                        <MainCcy>840</MainCcy>
+                        <CasGuid>KODMOHLTE5E3DIESIVQHSPF7HU</CasGuid>
+                        <CasGuidMap>
+                            <CasGuidItem CasKey="-" CasGuid="KODMOHLTE5E3DIESIVQHSPF7HU"/>
+                        </CasGuidMap>
+                        <FinishDay xsi:nil="true"/>
+                        <FinishUserName xsi:nil="true"/>
+                        <UsageRestriction xsi:nil="true"/>
+                        <LastUsageRestrictionChangeTime xsi:nil="true"/>
+                        <LastUsageRestrictionChangeUserName xsi:nil="true"/>
+                        <StatementTypeId xsi:nil="true"/>
+                        <StatementChannelId xsi:nil="true"/>
+                        <StatementLangCode xsi:nil="true"/>
+                    </tran:Contract>
+                    <tran:Customer>
+                        <sub:Person Id="15085" TypeId="1">
+                            <sub:Rid>e73aae32-30c5-4685-9794-925082c215d5</sub:Rid>
+                            <sub:InstId xsi:nil="true"/>
+                            <sub:InstName xsi:nil="true"/>
+                            <sub:BranchId xsi:nil="true"/>
+                            <sub:BranchName xsi:nil="true"/>
+                            <sub:Status>N</sub:Status>
+                            <sub:IsInsider>false</sub:IsInsider>
+                            <sub:IsAffiliated>false</sub:IsAffiliated>
+                            <sub:IsBankParticipant>false</sub:IsBankParticipant>
+                            <sub:ShareFraction xsi:nil="true"/>
+                            <sub:ExtQualCat xsi:nil="true"/>
+                            <sub:Notes xsi:nil="true"/>
+                            <sub:RiskLevel xsi:nil="true"/>
+                            <sub:LanguageCode xsi:nil="true"/>
+                            <sub:CommunicationLocale>en-US</sub:CommunicationLocale>
+                            <sub:UserAttrs/>
+                            <sub:ExtraData xsi:nil="true"/>
+                            <sub:SstPreferencies xsi:nil="true"/>
+                            <sub:MailAddress xsi:nil="true"/>
+                            <sub:MailAddressLat xsi:nil="true"/>
+                            <sub:SubjectDocuments/>
+                            <sub:SubjectEstates/>
+                            <sub:SubjectNotes/>
+                            <sub:OutSubjects/>
+                            <sub:SubjectApplications/>
+                            <sub:AuthQAs/>
+                            <sub:LastName>Barton</sub:LastName>
+                            <sub:LastNameLat xsi:nil="true"/>
+                            <sub:FirstName>Cyrus</sub:FirstName>
+                            <sub:FirstNameLat xsi:nil="true"/>
+                            <sub:MiddleName xsi:nil="true"/>
+                            <sub:MiddleNameLat xsi:nil="true"/>
+                            <sub:TitleTypeId>4</sub:TitleTypeId>
+                            <sub:Title2TypeId xsi:nil="true"/>
+                            <sub:TitleSuffixTypeId xsi:nil="true"/>
+                            <sub:Gender xsi:nil="true"/>
+                            <sub:MaritalStatus xsi:nil="true"/>
+                            <sub:ChildrenCnt xsi:nil="true"/>
+                            <sub:BirthDate>1975-06-18T12:52:25.000</sub:BirthDate>
+                            <sub:BirthPlace xsi:nil="true"/>
+                            <sub:BirthName xsi:nil="true"/>
+                            <sub:EducationTypeId xsi:nil="true"/>
+                            <sub:OccupationTypeId xsi:nil="true"/>
+                            <sub:EmploymentStatus xsi:nil="true"/>
+                            <sub:EmployerTitle xsi:nil="true"/>
+                            <sub:ResidentialStatus xsi:nil="true"/>
+                            <sub:CurResidenceDuration xsi:nil="true"/>
+                            <sub:RentMortgagePayCcy xsi:nil="true"/>
+                            <sub:CitizenshipId xsi:nil="true"/>
+                            <sub:ExtraCitizenship xsi:nil="true"/>
+                            <sub:ResidenceCountryId xsi:nil="true"/>
+                            <sub:RegAddress CountryId="840" AddressInCity="hQ-3" AddressInCountry="2796 Leuschke Skyway"
+                                            RecipientTitle="Mr" RecipientFirstName="Cyrus" RecipientLastName="Barton"
+                                            Zip="M15 4AB" RegionTitle="Alaska" CityTitle="North Devon District"
+                                            Phone="08123 7368" Email="Bethel@zTjtU.us"/>
+                            <sub:HomeAddress CountryId="840" AddressInCity="hQ-3"
+                                             AddressInCountry="2796 Leuschke Skyway" RecipientTitle="Mr"
+                                             RecipientFirstName="Cyrus" RecipientLastName="Barton" Zip="M15 4AB"
+                                             RegionTitle="Alaska" CityTitle="North Devon District" Phone="08123 7368"
+                                             Email="Bethel@zTjtU.us"/>
+                            <sub:HomeAddress2 xsi:nil="true"/>
+                            <sub:Emails xsi:nil="true"/>
+                            <sub:MobilePhones xsi:nil="true"/>
+                            <sub:WorkPhones xsi:nil="true"/>
+                            <sub:IsTerrorist>false</sub:IsTerrorist>
+                            <sub:IsVip>false</sub:IsVip>
+                            <sub:HasCapReader>false</sub:HasCapReader>
+                            <sub:IncomeCcy xsi:nil="true"/>
+                            <sub:ProfileId xsi:nil="true"/>
+                            <sub:PaymentTemplates/>
+                            <sub:Restrictions/>
+                        </sub:Person>
+                    </tran:Customer>
+                    <tran:Merchant>
+                        <sub:Corporation Id="15013" TypeId="4">
+                            <sub:Rid xsi:nil="true"/>
+                            <sub:InstId xsi:nil="true"/>
+                            <sub:InstName xsi:nil="true"/>
+                            <sub:BranchId xsi:nil="true"/>
+                            <sub:BranchName xsi:nil="true"/>
+                            <sub:Status>N</sub:Status>
+                            <sub:IsInsider>false</sub:IsInsider>
+                            <sub:IsAffiliated>false</sub:IsAffiliated>
+                            <sub:IsBankParticipant>false</sub:IsBankParticipant>
+                            <sub:ShareFraction xsi:nil="true"/>
+                            <sub:ExtQualCat xsi:nil="true"/>
+                            <sub:Notes xsi:nil="true"/>
+                            <sub:RiskLevel xsi:nil="true"/>
+                            <sub:LanguageCode>en</sub:LanguageCode>
+                            <sub:CommunicationLocale>en-US</sub:CommunicationLocale>
+                            <sub:UserAttrs/>
+                            <sub:ExtraData xsi:nil="true"/>
+                            <sub:SstPreferencies xsi:nil="true"/>
+                            <sub:MailAddress xsi:nil="true"/>
+                            <sub:MailAddressLat xsi:nil="true"/>
+                            <sub:SubjectDocuments>
+                                <sub:Document Id="1202" TypeId="3" Rid="111222333" IsActive="true">
+                                    <sub:Series xsi:nil="true"/>
+                                    <sub:ExpDate xsi:nil="true"/>
+                                    <sub:IssuerId xsi:nil="true"/>
+                                    <sub:Issuer xsi:nil="true"/>
+                                    <sub:Notes xsi:nil="true"/>
+                                    <sub:CountryId xsi:nil="true"/>
+                                    <sub:RegionRid xsi:nil="true"/>
+                                    <sub:Description1 xsi:nil="true"/>
+                                    <sub:Description2 xsi:nil="true"/>
+                                    <sub:Description3 xsi:nil="true"/>
+                                    <sub:IssueDate xsi:nil="true"/>
+                                    <sub:UserAttrs/>
+                                </sub:Document>
+                            </sub:SubjectDocuments>
+                            <sub:SubjectEstates/>
+                            <sub:SubjectNotes/>
+                            <sub:OutSubjects/>
+                            <sub:SubjectApplications/>
+                            <sub:Title>USTestMerchant</sub:Title>
+                            <sub:LegalTitle>USTestMerchant</sub:LegalTitle>
+                            <sub:LatTitle>USTestMerchant</sub:LatTitle>
+                            <sub:ShortTitle>USTestMerchant</sub:ShortTitle>
+                            <sub:OwnerTypeId xsi:nil="true"/>
+                            <sub:ParentOrgId xsi:nil="true"/>
+                            <sub:ParentOrgRid xsi:nil="true"/>
+                            <sub:LegalTypeId xsi:nil="true"/>
+                            <sub:MccId xsi:nil="true"/>
+                            <sub:QualityCode xsi:nil="true"/>
+                            <sub:LocationCode xsi:nil="true"/>
+                            <sub:WorkScheduleId xsi:nil="true"/>
+                            <sub:Address CountryId="840" AddressInCity="274 Marconi Blvd. Suite 320"
+                                         AddressInCountry="Klarna INC" RecipientFirstName="USTestMerchant" Zip="43215"
+                                         RegionTitle="OH" CityTitle="Columbus" Phone="1111111111111"
+                                         Mobile="1111111111112" Email="nothing@noreply.com" Url="klarna.com"/>
+                            <sub:LegalAddress xsi:nil="true"/>
+                            <sub:CorporationBankProps/>
+                        </sub:Corporation>
+                    </tran:Merchant>
+                    <tran:Postings>
+                        <tran:Posting Id="229987" AccountId="53728" OperDay="2015-06-18T00:00:00.000"
+                                      RegTime="2015-06-18T12:52:26.000" Sign="-1" Amt="224.59" Ccy="840"
+                                      RegisterRole="Loan" EntryKind="Tran" FinOperKind="PreDebitTran" TranKind="Goods"
+                                      IsTranReversal="false" TranLifePhase="Single"/>
+                        <tran:Posting Id="229992" AccountId="53729" OperDay="2015-06-18T00:00:00.000"
+                                      RegTime="2015-06-18T12:52:27.000" Sign="1" Amt="224.59" Ccy="840"
+                                      RegisterRole="Deposit" EntryKind="Tran" FinOperKind="PreCreditTran"
+                                      TranKind="Payment" IsTranReversal="false" TranCategoryCode="CardPay"
+                                      TranLifePhase="Single"/>
+                    </tran:Postings>
+                </tran:SendContractInfo>
+            </tran:Specific>
+        </tran:Request>
+        <tran:Response Id="150618000008313507" Result="Approved" ApprovalCode="308484"/>
+    </tran:Tran>
+</tran:Rtp>

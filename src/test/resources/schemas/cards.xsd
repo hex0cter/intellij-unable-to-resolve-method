@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           targetNamespace="http://schemas.klarna.com/cards"
+           xmlns="http://schemas.klarna.com/cards"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:currencies="http://schemas.klarna.com/currencies">
+    <xs:import namespace="http://schemas.klarna.com/currencies" schemaLocation="currencies.xsd"/>
+    <xs:simpleType name="creditCardYear">
+        <xs:restriction base="xs:integer">
+            <!-- For those having credit cards after 9999, well, too bad -->
+            <xs:minInclusive value="2000"/>
+            <xs:maxInclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="creditCardMonth">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="12"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cardNumber">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="cardAuthorizationId">
+        <xs:annotation>
+            <xs:documentation>
+                Refers to the Gateway Reference in the PGW service
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:complexType name="payee">
+        <xs:all>
+            <xs:element name="dateOfBirth" type="xs:date"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="card">
+        <xs:all>
+            <xs:element name="number" type="cardNumber"/>
+            <xs:element name="brand" type="xs:string"/>
+            <xs:element name="holder" type="xs:string"/>
+            <xs:element name="expirationYear" type="creditCardYear"/>
+            <xs:element name="expirationMonth" type="creditCardMonth"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="cardAuthorizationReversalRequest">
+        <xs:all>
+            <xs:element name="cardAuthorizationId" type="cardAuthorizationId"/>
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="cardCaptureOnCardAuthorizationRequest">
+        <xs:all>
+            <xs:element name="cardAuthorizationId" type="cardAuthorizationId"/>
+            <xs:element name="amount" type="currencies:value"/>
+        </xs:all>
+    </xs:complexType>
+</xs:schema>

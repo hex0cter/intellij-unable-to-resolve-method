@@ -1,0 +1,28 @@
+version = '1.0'
+description = 'Business Scenarios'
+
+apply plugin: 'maven'
+apply plugin: 'groovy'
+
+
+// Spock works with Java 1.5 and above
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+    mavenLocal()
+}
+
+dependencies {
+    // mandatory dependencies for using Spock
+    compile 'org.codehaus.groovy:groovy-all:2.4.5'
+    compile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    compile 'org.reflections:reflections:0.9.10'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.21'
+
+    // dependencies used in this project
+    compile 'com.klarna.kirk:kirk:1.0-SNAPSHOT'
+}
